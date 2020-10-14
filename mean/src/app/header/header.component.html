@@ -4,11 +4,9 @@
     <span class="example-spacer"></span>
     <a class="links side" routerLink="/auth/login" *ngIf="!user">Login</a>
     <div>
-      <a class="links side" *ngIf="user" routerLink="/gamereleases">Games Releases</a>
-      <a class="links side" *ngIf="user" routerLink="/gamereleases">Games ssdasd</a>
-      <a class="links side" *ngIf="user" routerLink="/gamereleases">New</a>
-      <button type="button" routerLink="/" class="btn btn-dark">HOME</button>
-      <button type="button" routerLink="gamereleases" >Games Releases</button>
+      <a class="links side" *ngIf="user" routerLink="/">หน้าหลัก</a>
+      <a class="links side" *ngIf="user" routerLink="/gamereleases">ข่าวเกม </a>
+    
 
       <a class="links side" *ngIf="user" [matMenuTriggerFor]="menu">
         <mat-icon>account_circle</mat-icon>{{ user.fullname }}
